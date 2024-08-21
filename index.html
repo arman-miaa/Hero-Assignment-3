@@ -1,62 +1,129 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hero-Assignment-3</title>
     <!-- Tailwind and daisyUI CDN Link -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                      fontFamily: {
-                monrope: "Monrope"
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              monrope: "Monrope",
             },
-                    colors: {
-                        clifford: '#da373d',
-                    }
-                }
-            }
-        }
-        </script>
-          <!-- fontwasome cdn -->
+            colors: {
+              clifford: "#da373d",
+              primary: "#ABEF5F",
+              secondary: "#ABEF5F80",
+            },
+     
+            backgroundImage: {
+              'bannerBg': "linear-gradient(to right, #FFFFFF00, #FFFFFF)",
+
+            },
+    
+          },
+        },
+      };
+    </script>
+    <!-- fontwasome cdn -->
     <script
       src="https://kit.fontawesome.com/1be1fc140b.js"
       crossorigin="anonymous"
     ></script>
     <!-- google font cdn -->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-<!-- favicon -->
- <link rel="icon" href="./assets/favicon.png" type="image/x-icon">
-        </head>
-<body  class="font-monrope">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- favicon -->
+    <link rel="icon" href="./assets/favicon.png" type="image/x-icon" />
+  </head>
+
+  <body class="font-monrope">
+
     <!-- header section start here-->
-     <header>
-        <!-- nav -->
-         <nav>
-         </nav>
-        <!-- nav -->
+    <header class="  bg-gradient-to-t from-[#ffffff5d] to-[#cccfcc55] w-full">
+      <!-- nav -->
+      <nav class="container mx-auto">
+<div class="navbar flex py-3 items-center justify-between">
+  <div class="navbar-start">
+    
+   <!-- logo -->
+    <div class="flex justify-center items-center">
+       <p class="bg-primary px-[7px] py-[2px] -rotate-45 text-black rounded-full"><i class="fa-solid fa-arrow-right-long"></i></p>       
+    <h3 class="btn btn-ghost text-3xl font-extrabold -ml-2">Rintario</h3>
+    </div>
+  </div>
 
-         <!-- banner section -->
-          <section>
+  <div class="navbar-center hidden lg:flex">
+    <ul class="menu menu-horizontal px-1 text-[#737373]">
+      <li class="font-extrabold"><a>Home</a></li>
+      <li><a>Services</a></li>
+      <li><a>Portfolio</a></li>
+      <li><a>Blogs</a></li>
+      <li><a>Contact Us</a></li>
+     
+    </ul>
+  </div>
+  <!-- right icons -->
+  <div class="navbar-end items-center gap-5 hidden md:flex ">
+    <div class="flex justify-center  items-center gap-5">
+      <p class="bg-white py-1 px-2 rounded-full"><i class="fa-solid fa-magnifying-glass"></i></p>
+      <p  class="bg-[#FFFFFF] py-1 px-2 rounded-full"><i class="fa-solid fa-cart-shopping"></i></p>
+    </div>
 
-          </section>
-         <!-- banner section -->
-     </header>
+    <div class="flex justify-center items-center bg-primary py-2 px-4 gap-1 rounded-full cursor-pointer">
+      <a class="text-xl font-extrabold ">Book Consult</a>
+      <p class="bg-black px-[7px] py-[2px] -rotate-45 text-white rounded-full"><i class="fa-solid fa-arrow-right-long"></i></p> 
+    </div>
+  </div>
+    <!-- hamburger menu -->
+    <div>
+      <p class="lg:hidden bg-blue-500 px-2 py-1 md:mx-4 mr-3 rounded-full"><i class="fa-solid fa-bars"></i></p>
+    </div>
+  
+</div>
+
+      </nav>
+      <!-- nav -->
+
+      <!-- banner section -->
+      <section class="container mx-auto flex flex-col justify-center items-center">
+        <!-- img -->
+         <div class="px-7 md:px-0 mx-auto">
+          <img src="./assets/banner.png" alt="">
+         </div>
+         <!-- title, des -->
+          <div class="text-center">
+            <h1 class=" text-3xl lg:text-6xl font-extrabold mb-6">A barn house of this design has a striking appearance</h1>
+            <p class="w-9/12 mx-auto font-medium mb-5 md:mb-8">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+            <!-- btn -->
+          <div class="flex justify-center items-center mx-3 md:inline-flex bg-secondary py-2 px-4 gap-1 rounded-full cursor-pointer">
+      <a class="text-xl font-extrabold ">View Details</a>
+      <p class="bg-primary px-[7px] py-[2px] -rotate-45 text-black rounded-full"><i class="fa-solid fa-arrow-right-long"></i></p> 
+    </div>
+    
+
+          </div>
+      </section>
+      <!-- banner section -->
+    </header>
     <!-- header section end here-->
-     <!-- main section start here -->
-      <main>
-
-      </main>
-     <!-- main section end here -->
-      <!-- footer section start here -->
-       <footer>
-
-       </footer>
-      <!-- footer section end here -->
-</body>
+    <!-- main section start here -->
+    <main></main>
+    <!-- main section end here -->
+    <!-- footer section start here -->
+    <footer></footer>
+    <!-- footer section end here -->
+  </body>
 </html>
