@@ -22,11 +22,12 @@
               clifford: "#da373d",
               primary: "#ABEF5F",
               secondary: "#ABEF5F80",
-              des1: "#494949",
-              des2: "#737373",
+              para1: "#494949",
+              para2: "#737373",
+              para3: "#fff",
             },
            backgroundImage: {
-        bgImg: "linear-gradient(to top,#a7a9ab, #a7a9ab), url('./assets/bg.jpg')",
+        bgImg: "linear-gradient(to bottom, gray, gray), url('./assets/bg.jpg')",
       },
           },
         },
@@ -50,7 +51,8 @@
 
   <body class="font-monrope">
     <!-- header section start here-->
-    <header class="bg-gradient-to-t from-[#ffffff5d] to-[#cccfcc55] w-full lg:min-h-screen">
+    <header class="bg-gradient-to-t from-[#fafcfb3d] to-[#eceae68c] w-full lg:min-h-screen">
+    <!-- <header class="bg-gradient-to-t from-[#ffffff5d] to-[#cccfcc55] w-full lg:min-h-screen"> -->
       <!-- nav -->
       <nav class="container mx-auto">
         <div class="navbar flex py-3 lg:py-4 items-center justify-between">
@@ -69,8 +71,8 @@
           </div>
 
           <div class="navbar-center hidden lg:flex">
-            <ul class="menu menu-horizontal px-1 text-[#737373] xl:text-xl">
-              <li class="font-extrabold"><a>Home</a></li>
+            <ul class="menu menu-horizontal px-1 text-para2 xl:text-xl">
+              <li class="font-extrabold"><a class="text-para1">Home</a></li>
               <li><a>Services</a></li>
               <li><a>Portfolio</a></li>
               <li><a>Blogs</a></li>
@@ -80,10 +82,10 @@
           <!-- right icons -->
           <div class="navbar-end items-center gap-5 hidden md:flex">
             <div class="flex justify-center items-center gap-5">
-              <p class="bg-white py-1 px-2 rounded-full cursor-pointer">
+              <p class="bg-white py-[5px] px-2 rounded-full cursor-pointer">
                 <i class="fa-solid fa-magnifying-glass"></i>
               </p>
-              <p class="bg-[#FFFFFF] py-1 px-2 rounded-full cursor-pointer">
+              <p class="bg-[#FFFFFF] py-[5px] px-2 rounded-full cursor-pointer">
                 <i class="fa-solid fa-cart-shopping"></i>
               </p>
             </div>
@@ -102,7 +104,7 @@
           <!-- hamburger menu -->
           <div>
             <p
-              class="lg:hidden bg-blue-500 px-2 py-1 md:mx-4 mr-3 rounded-full"
+              class="lg:hidden bg-white px-[10px] py-[5px] md:mx-4 mr-3 rounded-full"
             >
               <i class="fa-solid fa-bars"></i>
             </p>
@@ -133,7 +135,8 @@
             large windows that flood the space with natural light.
           </p>
           <!-- btn -->
-          <div
+         <div class="pb-10 lg:pb-0">
+           <div
             class="flex justify-center items-center mx-3 md:inline-flex bg-secondary py-2 px-4 gap-1 rounded-full cursor-pointer"
           >
             <a class="text-xl font-extrabold">View Details</a>
@@ -143,6 +146,7 @@
               <i class="fa-solid fa-arrow-right-long"></i>
             </p>
           </div>
+         </div>
         </div>
       </section>
       <!-- banner section -->
@@ -183,9 +187,7 @@
             <p
               class="font-medium lg:text-lg my-6  lg:my-8 xl:my-6 2xl:my-8 lg:text-left 2xl:leading-relaxed lg:w-full w-5/6 mx-auto text-center"
             >
-              The barn house captivates with its blend of rustic charm and
-              modern sophistication, featuring weathered wood,featuring
-              weathered wood, sleek metal accents.
+            The loft apartment mesmerizes with its fusion of industrial edge and urban elegance, showcasing exposed brick, polished concrete floors, and minimalist design.
             </p>
             <!-- cards -->
             <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-1 px-5 lg:px-0">
@@ -197,8 +199,7 @@
                 <div>
                   <h3 class="text-xl xl:text-2xl font-extrabold">Commercial</h3>
                   <p class="lg:w-3/4 font-medium 2xl:leading-relaxed xl:text-xl mt-2">
-                    The barn house captivates with its blend of featuring
-                    weathered wood, rustic charm and modern.
+                  Modern commercial spaces designed for productivity and client appeal, featuring innovative layouts
                   </p>
                 </div>
               </div>
@@ -208,10 +209,10 @@
               >
                 <img src="./assets/residential.png" alt="" />
                 <div>
-                  <h3 class="text-xl xl:text-2xl font-extrabold">Commercial</h3>
+                  <h3 class="text-xl xl:text-2xl font-extrabold">Corporate</h3>
                   <p class="lg:w-3/4 font-medium 2xl:leading-relaxed xl:text-xl mt-2">
-                    The barn house captivates with its blend of featuring
-                    weathered wood, rustic charm and modern.
+                    Spaces crafted to elevate your brand and operations,
+Where business meets design excellence.
                   </p>
                 </div>
               </div>
@@ -230,31 +231,31 @@
         <!-- icon section -->
         <div class="px-5 lg:px-0">
           <div
-            class="container mx-auto bg-white rounded-xl mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4"
+            class="container mx-auto py-14 bg-white rounded-xl mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4"
           >
             <!-- card 1  -->
-            <div class="card-body items-center text-center">
+            <div class="card-body items-center text-center space-y-1">
               <i class="fa-regular fa-comment-dots text-4xl"></i>
               <h2 class="card-title text-4xl font-extrabold">235+</h2>
               <p>Happy Client Review</p>
             </div>
             <!-- card 2  -->
-            <div class="card-body items-center text-center">
-              <i class="fa-regular fa-comment-dots text-4xl"></i>
-              <h2 class="card-title text-4xl font-extrabold">235+</h2>
-              <p>Happy Client Review</p>
+            <div class="card-body items-center text-center space-y-1">
+              <i class="fa-regular fa-building text-4xl"></i>
+              <h2 class="card-title text-4xl font-extrabold">50+</h2>
+              <p>Work Departments</p>
             </div>
             <!-- card 3  -->
-            <div class="card-body items-center text-center">
-              <i class="fa-regular fa-comment-dots text-4xl"></i>
-              <h2 class="card-title text-4xl font-extrabold">235+</h2>
-              <p>Happy Client Review</p>
+            <div class="card-body items-center text-center space-y-1">
+             <i class="fa-solid fa-user-group text-4xl"></i>
+              <h2 class="card-title text-4xl font-extrabold">30k+</h2>
+              <p>Our Happy Client</p>
             </div>
             <!-- card 4  -->
-            <div class="card-body items-center text-center">
-              <i class="fa-regular fa-comment-dots text-4xl"></i>
-              <h2 class="card-title text-4xl font-extrabold">235+</h2>
-              <p>Happy Client Review</p>
+            <div class="card-body items-center text-center space-y-1">
+              <i class="fa-solid fa-user-tie text-4xl"></i>
+              <h2 class="card-title text-4xl font-extrabold">307+</h2>
+              <p>Staff Members</p>
             </div>
           </div>
         </div>
@@ -278,11 +279,10 @@
               Our Works Process
             </h2>
             <p
-              class="font-medium my-6 w-11/12 lg:w-1/2 mx-auto text-center mt-2 text-des1"
+              class="font-medium my-6 w-11/12 lg:w-1/2 mx-auto text-center mt-2 text-textColor1"
             >
-              The barn house captivates with its blend of rustic charm and
-              modern sophistication, featuring weathered wood, sleekfeaturing
-              weathered accentsfeaturing weathered wood, sleek metal accents.
+              Guiding you through every step, from concept to completion,
+Streamlined processes for exceptional results, every time.Transparent steps to deliver quality and excellence.
             </p>
           </div>
           <!-- carsd -->
@@ -295,35 +295,31 @@
                 <img class="w-20" src="./assets/concept.png" alt="" />
                 <h2 class="card-title text-4xl font-extrabold">Concept</h2>
                 <p>
-                  The barn house captivates with its blendwith its blendwith its
-                  blendwith its blend of rustic charm and modern.
+                  Where ideas take shape, laying the foundation for innovation. Crafting visionary designs that inspire and transform.
                 </p>
               </div>
               <!-- card 2  -->
               <div class="card-body text-left bg-[#EFDA6E] rounded-xl">
                 <img class="w-20" src="./assets/flow-chart.png" alt="" />
-                <h2 class="card-title text-4xl font-extrabold">Concept</h2>
+                <h2 class="card-title text-4xl font-extrabold">Blueprint</h2>
                 <p>
-                  The barn house captivates with its blendwith its blendwith its
-                  blendwith its blend of rustic charm and modern.
+                The detailed plan that guides every step of our creation. Turning vision into reality with precision and clarity.
                 </p>
               </div>
               <!-- card 3  -->
               <div class="card-body text-left bg-[#A4DAC3] rounded-xl">
                 <img class="w-20" src="./assets/vision.png" alt="" />
-                <h2 class="card-title text-4xl font-extrabold">Concept</h2>
+                <h2 class="card-title text-4xl font-extrabold">Vision</h2>
                 <p>
-                  The barn house captivates with its blendwith its blendwith its
-                  blendwith its blend of rustic charm and modern.
+                 Imagining possibilities beyond the present. Guiding our path with innovative ideas and future-focused design.
                 </p>
               </div>
               <!-- card 4 -->
               <div class="card-body text-left bg-[#77AAEA] rounded-xl">
                 <img class="w-20" src="./assets/budget-planning.png" alt="" />
-                <h2 class="card-title text-4xl font-extrabold">Concept</h2>
+                <h2 class="card-title text-4xl font-extrabold">Expense</h2>
                 <p>
-                  The barn house captivates with its blendwith its blendwith its
-                  blendwith its blend of rustic charm and modern.
+                  Managing expenses effectively to maximize value. Ensuring every investment is aligned with strategic goals
                 </p>
               </div>
             </div>
@@ -351,11 +347,9 @@
             Our Latest Portfolio
           </h2>
           <p
-            class="font-medium my-6 w-11/12 lg:w-1/2 mx-auto text-center mt-2 text-des1"
+            class="font-medium my-6 w-11/12 lg:w-1/2 mx-auto text-center mt-2 text-textColor1"
           >
-            The barn house captivates with its blend of rustic charm and modern
-            sophistication, featuring weathered wood, sleekfeaturing weathered
-            accentsfeaturing weathered wood, sleek metal accents.
+           Explore our most recent projects showcasing innovative designs and successful outcomes. Discover how we turn concepts into exceptional results.
           </p>
         </div>
         <!-- cards top -->
@@ -366,13 +360,9 @@
           >
             <img class="w-full object-cover" src="./assets/img1.png" alt="" />
             <div>
-              <h3 class="text-xl font-extrabold">Commercial</h3>
+              <h3 class="text-xl font-extrabold">Modern Commercial Spaces</h3>
               <p class="font-medium mt-2">
-                The barn house captivates with its blend of featuring weathered
-                wood, rusticbarn house captivates with its blend of featuring
-                weathered wood, rusticbarn house captivates with its blend of
-                featuring weathered wood, rustic sticbarn house captivates with
-                its blend of featuring weathered wood, rustic charm and modern.
+            Experience the perfect fusion of functionality and elegance in our latest commercial designs. From sleek modern finishes to versatile layouts, we create spaces that enhance productivity and impress clients. Our designs incorporate cutting-edge technology, sustainable materials, and innovative features to ensure your business environment stands out and thrives in today’s competitive landscape.
               </p>
               <!-- btn -->
               <div class="flex py-2 gap-2 rounded-full cursor-pointer">
@@ -386,7 +376,7 @@
             </div>
           </div>
           <!-- card 2 -->
-          <div class="border-2 p-4 rounded-xl">
+          <div class="border-2 p-4 rounded-xl lg:w-[1100px]">
             <img
               class="h-full w-full lg:w-[700px] object-cover rounded-xl"
               src="./assets/img2.png"
@@ -409,7 +399,7 @@
           <div
             class="flex lg:flex-row flex-col flex-grow bg-white p-4 border-2 rounded-xl gap-5 items-start md:items-center"
           >
-          <div class="flex-1 h-full rounded-2xl">
+          <div class="flex-1 h-full w-full rounded-2xl">
               <img
               class="w-full h-full object-cover rounded-2xl"
               src="./assets/img4.png"
@@ -417,11 +407,9 @@
             />
           </div>
             <div class="flex-1">
-              <h3 class="text-xl font-extrabold">Commercial</h3>
+              <h3 class="text-xl font-extrabold">Commercial Spaces</h3>
               <p class="font-medium mt-2">
-                The barn house captivates with its blend of featuring weathered
-                wood, rusticb blend of featuring weathered wood, rusticbarn
-                house captivates with its blend of featuring weathered wood,
+            Our commercial designs captivate with a blend of sleek modern finishes and functional elegance. Featuring cutting-edge materials and versatile layouts, we craft environments that enhance productivity and make a lasting impression.
               </p>
               <!-- btn -->
               <div class="flex py-2 gap-2 rounded-full cursor-pointer">
@@ -477,16 +465,14 @@
               Let’s tour and see our house!
             </h2>
             <p
-              class="font-medium my-6 w-11/12 lg:w-1/2 mx-auto text-center mt-2 text-des1"
+              class="font-medium my-6 w-11/12 lg:w-1/2 mx-auto text-center mt-2 text-textColor1"
             >
-              The barn house captivates with its blend of rustic charm and
-              modern sophistication, featuring weathered wood, sleekfeaturing
-              weathered accentsfeaturing weathered wood, sleek metal accents.
+             Join us for a guided tour and experience the exceptional design and craftsmanship of our latest homes. Discover how we bring your dream living spaces to life.
             </p>
           </div>
           <!-- tour  section -->
           <div
-            class=" flex  md:flex-col lg:flex-row flex-col gap-9 justify-between items-center border-2 border-yellow-300"
+            class=" flex  md:flex-col lg:flex-row flex-col gap-9 justify-between items-center lg:mt-16 "
           >
           
             <!-- text-->
@@ -497,9 +483,9 @@
                   class="justify-center items-center inline-flex bg-white py-2 px-4 gap-1 rounded-full cursor-pointer"
                 >
                   <p class="px-[7px] py-[4px] rounded-full">
-                    <i class="fa-solid fa-arrow-right-long"></i>
+                    <i class="fa-solid fa-arrow-right-long text-orange-500"></i>
                   </p>
-                  <a class="font-bold">Ready to Sell!</a>
+                  <a class="font-bold text-orange-500">Ready to Sell!</a>
                 </div>
               </div>
               <h2
@@ -515,7 +501,7 @@
               </p>
               <!-- ditails -->
                <div class="lg:w-9/12 w-11/12 lg:mx-0 mx-auto ">
-              <h3 class="mb-4 text-2xl font-extrabold">House Detail</h3>
+              <h3 class="mb-4 text-2xl font-extrabold">House Details</h3>
               <!-- 1 line -->
               <div class="flex justify-between ">
                 <div class="flex justify-between items-center gap-4 md:text-3xl">
@@ -538,12 +524,11 @@
                   <a href="#">2 Floors</a>
                 </div>
               </div>
-              <!-- <hr class="mt-8 pb-12 w-9/12 border-t-4 text-[#171717d1]"> -->
               <!-- manager -->
-               <div class="flex justify-between  items-center">
+               <div class="flex justify-between  items-center pb-11 md:mb-0 mt-8 md:mt-0">
                 <div>
                   <div class="flex items-center xl:mt-7 gap-2 md:gap-5 justify-center">
-                    <img class="md:w-14" src="./assets/icons8-user-64.png" alt="">
+                    <img class="w-9 md:w-14" src="./assets/icons8-user-64.png" alt="">
                     <h3 class="mt-3 text-sm md:text-xl">Abdullah <br>
                     Manager </h3>
                   </div>
@@ -600,11 +585,9 @@
               Read Our Articles and News
             </h2>
             <p
-              class="font-medium my-6 w-11/12 lg:w-1/2 mx-auto text-center mt-2 text-des1"
+              class="font-medium my-6 w-11/12 lg:w-1/2 mx-auto text-center mt-2 text-textColor1"
             >
-              The barn house captivates with its blend of rustic charm and
-              modern sophistication, featuring weathered wood, sleekfeaturing
-              weathered accentsfeaturing weathered wood, sleek metal accents.
+              Stay informed with the latest updates and insights from our industry experts. Explore our articles and news to keep up with trends and innovations.
             </p>
           </div>
 
@@ -627,15 +610,10 @@
                   <small>By Admin</small>
                 </div>
                 <h3 class="text-xl font-extrabold">
-                  How to choose the furniture right of your home.
+                 Choosing the Perfect Furniture for Your Home.
                 </h3>
                 <p class="font-medium mt-2">
-                  The barn house captivates with its blend of featuring
-                  weathered wood, rusticbarn house captivates with its blend of
-                  featuring weathered wood, rusticbarn house captivates with its
-                  blend of featuring weathered wood, rustic sticbarn house
-                  captivates with its blend of featuring weathered wood, rustic
-                  charm and modern.
+                 Selecting the right furniture is key to creating a harmonious and inviting space. The barn house exemplifies this balance, combining rustic charm with modern sophistication through the use of weathered wood and sleek, contemporary accents. Thoughtfully chosen pieces can enhance the overall aesthetic.
                 </p>
                 <!-- btn -->
                 <div class="flex py-2 gap-2 rounded-full cursor-pointer">
@@ -660,7 +638,7 @@
               <div>
                 <div>
                   <i class="fa-solid fa-box"></i>
-                  <small>July14, 2024</small>
+                  <small>Jun 24, 2024</small>
                   <i class="fa-regular fa-circle-user"></i>
                   <small>By Admin</small>
                 </div>
@@ -690,30 +668,25 @@
             <div
               class="flex flex-col lg:flex-col md:flex-row bg-white p-6 mx-5 md:mx-0 rounded-xl gap-5"
             >
-              <div>
+              <div class="flex-1">
                 <img
                   class="w-full h-full rounded-xl"
                   src="./assets/article3.png"
                   alt=""
                 />
               </div>
-              <div>
+              <div class="flex-1">
                 <div>
                   <i class="fa-solid fa-box"></i>
-                  <small>July14, 2024</small>
+                  <small>Fab18, 2024</small>
                   <i class="fa-regular fa-circle-user"></i>
                   <small>By Admin</small>
                 </div>
                 <h3 class="text-xl font-extrabold">
-                  How to choose the furniture right of your home.
+                  Tips for Selecting the  Furniture for Your Home
                 </h3>
                 <p class="font-medium mt-2">
-                  The barn house captivates with its blend of featuring
-                  weathered wood, rusticbarn house captivates with its blend of
-                  featuring weathered wood, rusticbarn house captivates with its
-                  blend of featuring weathered wood, rustic sticbarn house
-                  captivates with its blend of featuring weathered wood, rustic
-                  charm and modern.
+                  Selecting the right furniture is essential to creating a harmonious and inviting space. The barn house perfectly demonstrates this balance, blending rustic charm with modern sophistication through the use of weathered wood and sleek, contemporary accents. By carefully choosing each piece, you can enhance your home's aesthetic.
                 </p>
                 <!-- btn -->
                 <div class="flex py-2 gap-2 rounded-full cursor-pointer">
@@ -754,11 +727,9 @@
                 Let’s Discuss Next Project
               </h2>
               <p
-                class="font-medium my-6 w-11/12 lg:w-1/2 mx-auto text-center mt-2 text-des1"
+                class="font-medium my-6 w-11/12 lg:w-1/2 mx-auto text-center mt-2 text-textColor1"
               >
-                The barn house captivates with its blend of rustic charm and
-                modern sophistication, featuring weathered wood, sleekfeaturing
-                weathered accentsfeaturing weathered wood, sleek metal accents.
+                Ready to bring your vision to life? Let's collaborate on your next project, blending creativity with precision to achieve exceptional results. From initial ideas to final execution, we're here to guide you every step of the way.
               </p>
             </div>
             <!-- input -->
@@ -853,9 +824,8 @@
           </p>
           <h3 class="text-3xl font-extrabold">Rintario</h3>
         </div>
-        <p class="font-bold mx-auto -mt-8 md:w-2/5">
-          The barn house captivates with its blend of rustic charm and modern
-          sophistication, featuring weathered wood, sleek metal accents.
+        <p class="font-bold mx-auto -mt-8 md:w-2/5 px-14 md:px-0 text-para1">
+          Our designs blend rustic charm with modern sophistication, using weathered wood and sleek metal accents to create captivating spaces.
         </p>
         <div class="-mt-8">
           <ul
