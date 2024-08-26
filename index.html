@@ -51,7 +51,7 @@
 
   <body class="font-monrope">
     <!-- header section start here-->
-    <header class="bg-gradient-to-b from-gray-200 to-white w-full lg:min-h-screen">
+    <header class="bg-gradient-to-b from-gray-200 to-white w-full xl:min-h-screen">
     <!-- <header class="bg-gradient-to-t from-[#fafcfb3d] to-[#eceae68c] w-full lg:min-h-screen"> -->
       <!-- nav -->
       <nav class="container mx-auto pt-4">
@@ -115,7 +115,7 @@
 
       <!-- banner section -->
       <section
-        class="container mx-auto lg:h-[92vh] flex flex-col justify-center items-center"
+        class="container mx-auto lg:h-[vh] flex flex-col justify-center items-center"
       >
         <!-- img -->
         <div class="px-7 md:px-0 mx-auto">
@@ -135,7 +135,7 @@
             large windows that flood the space with natural light.
           </p>
           <!-- btn -->
-         <div class="">
+         <div class=" md:mb-32 lg:mb-0">
            <div
             class="flex justify-center items-center mx-3 md:inline-flex bg-secondary py-2 px-4 gap-1 rounded-full cursor-pointer"
           >
@@ -155,22 +155,27 @@
     <!-- main section start here -->
     <main>
       <!-- about and work section start here -->
-      <section class="bg-[#F4F4F4] w-full mt-8 md:mt-0">
+      <section class="   bg-[#F4F4F4] w-full mt-8   md:mt-24 lg:mt-12 lg:pt-20 ">
+        
         <!-- about section -->
         <div
-          class="container mx-auto lg:h-screen flex md:flex-col lg:flex-row flex-col lg:items-center gap-9 lg:gap-12 xl:gap-14 justify-between "
+          class=" relative container mx-auto py-6 lg:py-0    "
         >
-          <!-- text-->
-          <div class="flex-1">
-            <img
-              class="relative -top-10 -left-12 hidden lg:flex"
+         <div  class="absolute  -top-16 -left-12 hidden lg:block">
+             <img
+             
               src="./assets/Vector.png"
               alt=""
             />
+           </div>
+         <div class="flex flex-col  lg:flex-row flex-grow lg:max-h-full gap-9 lg:gap-12  justify-between">
+           <!-- text-->
+          <div class="flex-1 lg:h-full">
+          
 
-            <div class="relative bottom-5 text-center lg:text-left">
+            <div class=" text-center lg:text-left">
               <div
-                class="justify-center items-center 2xl:mb-4 inline-flex bg-white py-2 px-4 gap-1 rounded-full cursor-pointer"
+                class="justify-center items-center 2xl:mb-4 inline-flex bg-white xl:py-2 px-4 gap-1 rounded-full cursor-pointer"
               >
                 <p class="px-[7px] py-[4px] rounded-full">
                   <i class="fa-solid fa-arrow-right-long"></i>
@@ -179,18 +184,18 @@
               </div>
             </div>
             <h2
-              class="md:text-5xl text-2xl xl:text-6xl lg:text-left lg:w-full w-5/6 mx-auto text-center font-bold"
+              class="md:text-4xl text-2xl xl:text-6xl lg:text-left lg:w-full w-5/6 mx-auto mt-2 xl:mt-4 text-center font-bold"
             >
               We design thoughtful, <br />
               liveable spaces
             </h2>
             <p
-              class="font-medium lg:text-lg my-6  lg:my-8 xl:my-6 2xl:my-8 lg:text-left 2xl:leading-relaxed lg:w-full w-5/6 mx-auto text-center"
+              class="font-medium lg:text-lg 2xl:text-2xl my-6 lg:my-1 xl:my-6  2xl:my-8 lg:text-left 2xl:leading-relaxed lg:w-full w-5/6 mx-auto text-center"
             >
             The loft apartment mesmerizes with its fusion of industrial edge and urban elegance, showcasing exposed brick, polished concrete floors, and minimalist design.
             </p>
             <!-- cards -->
-            <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-1 px-5 lg:px-0">
+            <div class="grid gap-6 lg:gap-3 xl:gap-6 md:grid-cols-2 lg:grid-cols-1 px-5 lg:px-0">
               <!-- card 1  -->
               <div
                 class="flex bg-white p-6 rounded-xl gap-5 items-start md:items-center"
@@ -198,19 +203,19 @@
                 <img class="w-10 md:w-16" src="./assets/commercial.png" alt="" />
                 <div>
                   <h3 class="text-xl xl:text-2xl font-extrabold">Commercial</h3>
-                  <p class="lg:w-3/4 font-medium 2xl:leading-relaxed xl:text-xl mt-2">
+                  <p class="xl:w-3/4 font-medium 2xl:leading-relaxed 2xl:text-xl mt-2">
                   Modern commercial spaces designed for productivity and client appeal, featuring innovative layouts
                   </p>
                 </div>
               </div>
               <!-- card 2  -->
               <div
-                class="flex bg-white p-6 rounded-xl gap-5 items-start md:items-center"
+                class="flex bg-white p-6 lg:p-4 xl:p-6 rounded-xl gap-5 items-start md:items-center"
               >
                 <img class="w-10 md:w-16" src="./assets/residential.png" alt="" />
                 <div>
                   <h3 class="text-xl xl:text-2xl font-extrabold">Corporate</h3>
-                  <p class="lg:w-3/4 font-medium 2xl:leading-relaxed xl:text-xl mt-2">
+                  <p class="xl:w-3/4 font-medium 2xl:leading-relaxed 2xl:text-xl mt-2">
                     Spaces crafted to elevate your brand and operations,
 Where business meets design excellence.
                   </p>
@@ -219,19 +224,20 @@ Where business meets design excellence.
             </div>
           </div>
           <!-- img -->
-          <div class="flex-1 w-full h-full lg:flex justify-center items-center  lg:h-4/5">
+          <div class="flex-1 w-full  h-full   ">
             <img
-              class="w-full h-full lg:h-[90%] xl:h-[93%] px-5 lg:px-0 object-cover rounded-xl"
+              class=" w-full h-full px-5 lg:px-0 rounded-xl"
               src="./assets/Rectangle.png"
               alt=""
             />
           </div>
+         </div>
         </div>
 
         <!-- icon section -->
         <div class="px-6 lg:px-0 mt-7">
           <div
-            class="container mx-auto py-14 bg-white rounded-xl  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4"
+            class="container mx-auto lg:py-14 bg-white rounded-xl  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4"
           >
             <!-- card 1  -->
             <div class="card-body items-center text-center space-y-1">
@@ -356,10 +362,14 @@ Streamlined processes for exceptional results, every time.Transparent steps to d
         <div class="flex lg:flex-row flex-col gap-7 px-5 lg:px-0 md:mt-16">
           <!-- card 1  -->
           <div
-            class="flex lg:flex-row flex-col flex-grow bg-white p-6 border-2 rounded-xl gap-5 items-start md:items-center"
+            class="flex lg:flex-row  flex-col flex-grow bg-white p-6 border-2 rounded-xl gap-5 items-start md:items-center"
           >
-            <img class="w-full object-cover" src="./assets/img1.png" alt="" />
-            <div>
+          <div class="h-full w-full lg:basis-1/3">
+            <img class="w-full h-full lg:object-cover rounded-xl" src="./assets/img1.png" alt="" />
+
+          </div>
+
+          <div class="lg:basis-2/3">
               <h3 class="text-xl font-extrabold">Modern Commercial Spaces</h3>
               <p class="font-medium mt-2">
             Experience the perfect fusion of functionality and elegance in our latest commercial designs. From sleek modern finishes to versatile layouts, we create spaces that enhance productivity and impress clients. Our designs incorporate cutting-edge technology, sustainable materials, and innovative features to ensure your business environment stands out and thrives in today’s competitive landscape.
@@ -443,7 +453,7 @@ Streamlined processes for exceptional results, every time.Transparent steps to d
       <!-- Latest Porfolio section end here -->
 
       <!-- Tours section start here -->
-      <section class=" mt-6 md:mt-24 lg:mb-12  lg:h-screen">  
+      <section class=" mt-6 md:mt-24 xl:mb-12 h-auto xl:h-auto">  
         <!-- bg-[#F4F4F4] -->
         <!-- content -->
         <div class="container mx-auto h-full ">
@@ -465,18 +475,18 @@ Streamlined processes for exceptional results, every time.Transparent steps to d
               Let’s tour and see our house!
             </h2>
             <p
-              class="font-medium my-6 w-11/12 lg:w-1/2 mx-auto text-center mt-2 text-textColor1"
+              class="font-medium text-lg my-6 w-11/12 lg:w-1/2 mx-auto text-center mt-2 text-textColor1"
             >
              Join us for a guided tour and experience the exceptional design and craftsmanship of our latest homes. Discover how we bring your dream living spaces to life.
             </p>
           </div>
           <!-- tour  section -->
           <div
-            class=" flex  md:flex-col lg:flex-row flex-col gap-9 justify-between items-center lg:mt-16 "
+            class=" flex  md:flex-col lg:flex-row flex-col gap-9 justify-between items-center lg:py-8 xl:py-0 xl:mt-16 "
           >
           
             <!-- text-->
-            <div class="flex-1 order-2 lg:order-1">            
+            <div class="flex-1 h-full order-2 lg:order-1">            
 
               <div class="relative bottom-5 text-center lg:text-left">
                 <div
@@ -489,72 +499,25 @@ Streamlined processes for exceptional results, every time.Transparent steps to d
                 </div>
               </div>
               <h2
-                class="md:text-5xl text-2xl lg:text-left lg:w-full w-5/6 mx-auto text-center font-bold"
+                class="text-2xl lg:text-4xl xl:text-5xl  lg:text-left lg:w-full w-5/6 mx-auto text-center font-bold"
               >
                 This wonderful new house has <br />
                  recently been built.
               </h2>
               <p
-                class="font-medium xl:text-2xl my-6 lg:text-left lg:w-full w-5/6 mx-auto text-center"
+                class="font-medium lg:text-2xl xl:text-3xl my-6 lg:text-left lg:w-full w-5/6 mx-auto text-center"
               >
                Houses recommended by our partners that have been curated to become the home of your dreams!Houses recommended by our partners that have been curated to become the home of your dreams!
               </p>
               <!-- ditails -->
-               <div class="lg:w-9/12 w-11/12 lg:mx-0 mx-auto ">
-              <h3 class="mb-4 text-2xl font-extrabold">House Details</h3>
-              <!-- 1 line -->
-              <div class="flex justify-between ">
-                <div class="flex justify-between items-center gap-4 md:text-3xl">
-                  <i class="fa-solid fa-bed md:text-5xl"></i>
-                  <a href="#">4 Bedrooms</a>
-                </div>
-                <div  class="flex justify-between items-center gap-4 md:text-3xl">
-                  <a href="#"><img class=" w-7 md:w-12" src="./assets/icons8-balcony-50.png" alt=""></a>
-                  <a href="#">2 Balcony</a>
-                </div>
-              </div>
-              <!-- 2 line -->
-                 <div class="flex justify-between  mt-8">
-                <div class="flex justify-between items-center gap-4 md:text-3xl">
-                  <a href="#"><img class="w-7 md:w-12" src="./assets/icons8-carpark-50.png" alt=""></a>
-                  <a href="#">1 Carport</a>
-                </div>
-                <div  class="flex justify-between items-center gap-4 md:text-3xl">
-                  <a href="#"><img class="w-7 md:w-16" src="./assets/floors.png" alt=""></a>
-                  <a href="#">2 Floors</a>
-                </div>
-              </div>
-              <!-- manager -->
-               <div class="flex justify-between  items-center pb-11 md:mb-0 mt-8 md:mt-0">
-                <div>
-                  <div class="flex items-center xl:mt-7 gap-2 md:gap-5 justify-center">
-                    <img class="w-9 md:w-14" src="./assets/icons8-user-64.png" alt="">
-                    <h3 class="mt-3 text-sm md:text-xl">Abdullah <br>
-                    Manager </h3>
-                  </div>
-
-                </div>
-                <div>
-                       <div class="text-center">
-              <div
-                class="justify-center mt-3 items-center inline-flex bg-primary py-2 px-4 gap-1 rounded-full cursor-pointer"
-              >
-                <p class="md:px-[7px] md:py-[4px] ">
-                 <i class="fa-solid fa-phone"></i>
-                </p>
-                <a class="font-bold">Contact Now</a>
-              </div>
-            </div>
-
-                </div>
-               </div>
-              
-           </div>
+             
+               
+             
             </div>
             <!-- img -->
             <div class="flex-1 w-full h-full order-1 lg:order-2">
               <img
-                class="w-full px-5 lg:px-0 object-cover rounded-xl"
+                class="w-full h-full px-5 lg:px-0 object-cover rounded-xl"
                 src="./assets/tour-1.png"
                 alt=""
               />
